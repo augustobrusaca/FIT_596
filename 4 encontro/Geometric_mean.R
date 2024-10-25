@@ -1,7 +1,7 @@
 # Autor: Luiz Augusto Brusaca
 # Data: 23/10/2024
-# Disciplina: FIT 596 - Comportamentos fÌsicos medidos atravÈs de acelerometria: 
-# coleta, processamento e an·lise de dados
+# Disciplina: FIT 596 - Comportamentos f√≠sicos medidos atrav√©s de acelerometria: 
+# coleta, processamento e an√°lise de dados
 
 
 # Install Packages from Repositories or Local Files
@@ -105,7 +105,7 @@ df_arith_mean_Behaviours_h <- df %>%
                                  format(round(sd, 1), nsmall = 1),")")) %>% 
   dplyr::select(-c(mean, sd)) %>% 
   tidyr::pivot_wider(names_from = variable, values_from = Minutes) %>% 
-  dplyr::mutate(Var_metric = "Minutes") %>% 
+  dplyr::mutate(Var_metric = "Hours") %>% 
   dplyr::relocate(Var_metric, .before = SB) %>% 
   data.frame()
 
@@ -137,7 +137,7 @@ df_arith_mean_Behaviours_perc <- df %>%
                                  format(round(sd, 1), nsmall = 1),")")) %>% 
   dplyr::select(-c(mean, sd)) %>% 
   tidyr::pivot_wider(names_from = variable, values_from = Minutes) %>% 
-  dplyr::mutate(Var_metric = "Minutes") %>% 
+  dplyr::mutate(Var_metric = "Percentage") %>% 
   dplyr::relocate(Var_metric, .before = SB) %>% 
   data.frame()
 
