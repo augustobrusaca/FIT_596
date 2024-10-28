@@ -1,7 +1,7 @@
 # Autor: Luiz Augusto Brusaca
 # Data: 23/10/2024
-# Disciplina: FIT 596 - Comportamentos físicos medidos através de acelerometria: 
-# coleta, processamento e análise de dados
+# Disciplina: FIT 596 - Comportamentos fÃ­sicos medidos atravÃ©s de acelerometria: 
+# coleta, processamento e anÃ¡lise de dados
 
 
 # Install Packages from Repositories or Local Files
@@ -101,8 +101,8 @@ df %>%
   rstatix::get_summary_stats(type = "mean_sd")
 
 
-########## one-way MANOVA ##########
-# Running the one-way multivariate analysis of variance (MANOVA)
+########## one-way repeated-measures MANOVA ##########
+# Running the one-way repeated-measures multivariate analysis of variance (MANOVA)
 MANOVA_model <- manova(cbind(ilr1, ilr2, ilr3) ~ Evaluation + Error(factor(ID)), df)
 
 res_MANOVA <- summary(MANOVA_model, test = "Wilks")$'Error: Within'[4] %>% 
