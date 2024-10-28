@@ -1,7 +1,7 @@
 # Autor: Luiz Augusto Brusaca
 # Data: 23/10/2024
-# Disciplina: FIT 596 - Comportamentos fÌsicos medidos atravÈs de acelerometria: 
-# coleta, processamento e an·lise de dados
+# Disciplina: FIT 596 - Comportamentos f√≠sicos medidos atrav√©s de acelerometria: 
+# coleta, processamento e an√°lise de dados
 
 
 # Install Packages from Repositories or Local Files
@@ -11,6 +11,7 @@ install.packages("readxl")
 install.packages("data.table")
 install.packages("rstatix")
 install.packages("compositions")
+install.packages("boot")
 
 
 # Load packages required for analysis
@@ -20,6 +21,7 @@ library(readxl)
 library(data.table)
 library(rstatix)
 library(compositions)
+library(boot)
 
 
 ########## Load accelerometer data ##########
